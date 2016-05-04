@@ -8,13 +8,16 @@ public class ArrayPriorityQueue {
 	_queue = new ArrayList<Comparable>();
     }
     
-    public void add(Object x) {
+    public void add(Comparable x) {
+	boolean added = false;
 	for(int i = _queue.size() - 1; i >= 0; i--) {
 	    if(_queue.get(i).compareTo(x) >= 0) {
-		_queue.add(x, i);
+		_queue.add(i, x);
+		added = true;
 		break;
 	    }
-	}   
+	}
+	if(!added) _queue.add(x);
     }
 
     public boolean isEmpty() {
@@ -29,6 +32,24 @@ public class ArrayPriorityQueue {
 	Object ret = peekMin();
 	_queue.remove(0);
 	return ret;
+    }
+
+    public String toString() {
+	return _queue.toString();
+    }
+
+    public static void main(String[] args) {
+	ArrayPriorityQueue nala = new ArrayPriorityQueue();
+	System.out.println("printing nala..." + nala);
+	System.out.println("adding to nala...");
+	nala.add(4);
+	nala.add(7);
+	nala.add(23);
+	nala.add(19);
+	nala.add(1);
+	nala.add(12);
+	nala.add(6);
+	System.out.println("printing nala..." + nala);
     }
 
 }
