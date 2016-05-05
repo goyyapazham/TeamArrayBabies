@@ -1,3 +1,10 @@
+/* 
+   TeamArrayBabies - Nalanda Sharadjaya, Richard Lin, Jiawei Chen
+   APCS Pd5 
+   HW35: Privileged Status Gets You to the Front of the Line  
+   2016-05-04
+*/
+
 import java.util.ArrayList;
 
 public class ArrayPriorityQueue {
