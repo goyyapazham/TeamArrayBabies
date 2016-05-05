@@ -20,7 +20,6 @@ public class ArrayPriorityQueue {
 	//Insert directly into queue if empty
 	if (_queue.size() == 0) {
 	    _queue.add(x);
-	    System.out.println("" + x + this);
 	    return;
 	}
 
