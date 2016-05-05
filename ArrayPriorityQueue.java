@@ -69,6 +69,7 @@ public class ArrayPriorityQueue {
 
     public static void main(String[] args) {
 	ArrayPriorityQueue nala = new ArrayPriorityQueue();
+	
 	System.out.println("printing nala..." + nala);
 	System.out.println("adding to nala...");
 	nala.add(4);
@@ -78,6 +79,11 @@ public class ArrayPriorityQueue {
 	nala.add(1);
 	nala.add(12);
 	nala.add(6);
+	System.out.println("printing nala..." + nala);
+
+	System.out.println("peeking @nala..." + nala.peekMin());
+	
+	System.out.println("removing from nala..." + nala.removeMin());
 	System.out.println("printing nala..." + nala);
     }
 
