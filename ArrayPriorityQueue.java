@@ -72,6 +72,7 @@ public class ArrayPriorityQueue {
 	
 	System.out.println("printing nala..." + nala);
 	System.out.println("adding to nala...");
+	
 	nala.add(4);
 	nala.add(7);
 	nala.add(23);
@@ -79,6 +80,7 @@ public class ArrayPriorityQueue {
 	nala.add(1);
 	nala.add(12);
 	nala.add(6);
+	
 	System.out.println("printing nala..." + nala);
 
 	System.out.println("peeking @nala..." + nala.peekMin());
